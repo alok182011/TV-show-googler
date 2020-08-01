@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/resultsstyle.css">
+    <title>TV-SHOW Googler</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <% data.forEach(movie => { %>
+        <li>
+          <div class="box">
+            <div class="image">
+              <% if(movie["show"]["image"]=== null){ %>
+              <h1>No image Available</h1>
+              <%} else{ %> <img src="<%= movie["show"]["image"]["medium"] %>">
+              <%}%>
+            </div>
+            <div class="info">
+              <h1 class="name"><%= movie["show"]["name"]%></h1>
+              <h2>Genres : <%= movie["show"]["genres"]%></h2>
+              <h2>Language : <%= movie["show"]["language"]%></h2>
+              <p><h3>Summary : <%= movie["show"]["summary"]%></h3></p>
+              <hr/>
+            </div>
+          </div>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+  </body>
+</html>
