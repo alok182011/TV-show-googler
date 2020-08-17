@@ -1,9 +1,7 @@
 .container {
   width: 80%;
-  height: 600px;
+  min-height: 600px;
   display: flex;
-  margin-left: 10%;
-  margin-top: 5%;
   background: purple;
   color: white;
   text-align: center;
@@ -13,17 +11,19 @@
   box-shadow: 0px 0px 3px 3px orange, 0px 0px 8px 8px red;
 }
 
-button {
-  border: none;
-  padding: 5px;
-  font-size: 15px;
-  font-weight: 500;
-  box-shadow: 3px 3px 1px 2px black;
+body {
+  background: #0f0e17;
 }
 
 input {
   font-size: 15px;
 }
-body {
-  background: aqua;
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+button {
+  background: #ff8906;
 }

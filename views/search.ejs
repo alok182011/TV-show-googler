@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/searchstyle.css" />
     <title>TV-SHOW Googler</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Search for a TV SHOW :</h1>
-
-      <form action="/results" method="GET">
-        <input type="text" placeholder="search term" name="search" />
-        <button type="submit">SUBMIT</button>
-      </form>
-    </div>
+    <section id="main" class="content-section">
+      <div class="container text-center text-white">
+        <img class="img-fluid" src="img/vision.svg" />
+        <h1>Search for a TV SHOW :</h1>
+        <form action="/results" method="GET">
+          <input type="text" placeholder="search term" name="search" />
+          <button class="btn btn-sm" type="submit">
+            SUBMIT
+          </button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
