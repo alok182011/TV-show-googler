@@ -6,12 +6,18 @@ body {
   background: #0f0e17;
 }
 
+#main {
+  width: 80%;
+  margin-left: 10%;
+}
+
 .container {
   color: #fffffe;
 }
 
 h4 {
   color: #a7a9be;
+  text-align: justify;
 }
 
 h1 {
